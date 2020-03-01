@@ -9,9 +9,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 
-/**
- * @author 应癫
- */
 @Service("transferService")
 @Transactional
 public class TransferServiceImpl implements TransferService {
@@ -34,7 +31,7 @@ public class TransferServiceImpl implements TransferService {
             to.setMoney(to.getMoney()+money);
 
             accountDao.updateAccountByCardNo(to);
-            int c = 1/0;
+//            int c = 1/0;
             accountDao.updateAccountByCardNo(from);
 
 

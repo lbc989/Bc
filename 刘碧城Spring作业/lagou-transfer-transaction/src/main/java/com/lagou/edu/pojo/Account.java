@@ -1,8 +1,5 @@
 package com.lagou.edu.pojo;
 
-/**
- * @author 应癫
- */
 public class Account {
 
     private String cardNo;

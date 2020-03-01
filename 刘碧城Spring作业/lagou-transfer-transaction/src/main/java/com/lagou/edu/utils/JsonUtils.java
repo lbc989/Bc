@@ -7,10 +7,6 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-/**
- * JSON工具类（使用的是jackson实现的）
- * @author 应癫
- */
 public class JsonUtils {
 
     private static final ObjectMapper MAPPER = new ObjectMapper();
