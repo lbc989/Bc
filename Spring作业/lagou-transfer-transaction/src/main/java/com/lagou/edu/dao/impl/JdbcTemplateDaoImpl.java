@@ -11,9 +11,7 @@ import org.springframework.stereotype.Repository;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- * @author 应癫
- */
+
 @Repository("accountDao")
 public class JdbcTemplateDaoImpl implements AccountDao {
 
