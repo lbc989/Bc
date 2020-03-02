@@ -9,9 +9,7 @@ import org.springframework.context.annotation.Scope;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-/**
- * @author 应癫
- */
+
 public class Result {
 
     private String status;

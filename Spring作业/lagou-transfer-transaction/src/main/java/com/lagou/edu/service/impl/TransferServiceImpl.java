@@ -8,9 +8,7 @@ import com.lagou.edu.service.TransferService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-/**
- * @author 应癫
- */
+
 @MyService("transferService")
 public class TransferServiceImpl implements TransferService {
 
