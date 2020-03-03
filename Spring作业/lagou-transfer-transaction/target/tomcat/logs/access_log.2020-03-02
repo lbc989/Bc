@@ -24,3 +24,7 @@
 0:0:0:0:0:0:0:1 - - [02/Mar/2020:13:54:27 +0800] "POST /transferServlet HTTP/1.1" 200 69 http-bio-8080-exec-1 322
 0:0:0:0:0:0:0:1 - - [02/Mar/2020:14:10:28 +0800] "POST /transferServlet HTTP/1.1" 200 69 http-bio-8080-exec-1 312
 0:0:0:0:0:0:0:1 - - [02/Mar/2020:14:10:37 +0800] "POST /transferServlet HTTP/1.1" 200 69 http-bio-8080-exec-2 14
+0:0:0:0:0:0:0:1 - - [02/Mar/2020:14:44:31 +0800] "POST /transferServlet HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [02/Mar/2020:14:52:07 +0800] "POST /transferServlet HTTP/1.1" 200 69 http-bio-8080-exec-1 310
+0:0:0:0:0:0:0:1 - - [02/Mar/2020:14:52:44 +0800] "POST /transferServlet HTTP/1.1" 200 31 http-bio-8080-exec-1 311
+0:0:0:0:0:0:0:1 - - [02/Mar/2020:14:52:50 +0800] "POST /transferServlet HTTP/1.1" 200 31 http-bio-8080-exec-2 5

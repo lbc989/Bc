@@ -40,11 +40,6 @@
       <artifactId>druid</artifactId>
       <version>1.1.21</version>
     </dependency>
-    <dependency>
-      <groupId>c3p0</groupId>
-      <artifactId>c3p0</artifactId>
-      <version>0.9.1.2</version>
-    </dependency>
     <!-- servlet -->
     <dependency>
       <groupId>javax.servlet</groupId>
@@ -59,6 +54,7 @@
       <artifactId>jackson-databind</artifactId>
       <version>2.9.6</version>
     </dependency>
+
 
     <!--dom4j依赖-->
     <dependency>

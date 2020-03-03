@@ -1,22 +1,22 @@
 package com.lagou.edu.service.impl;
 
+import com.lagou.edu.MyAnnotation.MyAutowired;
 import com.lagou.edu.MyAnnotation.MyService;
 import com.lagou.edu.dao.AccountDao;
+import com.lagou.edu.dao.impl.JdbcTemplateDaoImpl;
 import com.lagou.edu.pojo.Account;
 import com.lagou.edu.MyAnnotation.MyTransactional;
 import com.lagou.edu.service.TransferService;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.beans.factory.annotation.Qualifier;
 
 
 @MyService("transferService")
 public class TransferServiceImpl implements TransferService {
 
 
-    @Autowired
+    @MyAutowired
     private AccountDao accountDao;
-
-
 
 
     @Override
@@ -30,7 +30,7 @@ public class TransferServiceImpl implements TransferService {
             to.setMoney(to.getMoney()+money);
 
             accountDao.updateAccountByCardNo(to);
-            int c = 1/0;
+//            int c = 1/0;
             accountDao.updateAccountByCardNo(from);
 
 

@@ -1,8 +1,10 @@
 package com.lagou.edu.dao.impl;
 
+import com.lagou.edu.MyAnnotation.MyAutowired;
 import com.lagou.edu.pojo.Account;
 import com.lagou.edu.dao.AccountDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
