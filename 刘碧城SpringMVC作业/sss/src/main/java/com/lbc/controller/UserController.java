@@ -5,7 +5,6 @@ import com.lbc.pojo.Resume;
 import com.lbc.pojo.ResumeDTO;
 import com.lbc.pojo.User;
 import com.lbc.service.ResumeService;
-import com.lbc.vo.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
