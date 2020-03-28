@@ -34,8 +34,4 @@ Tomcat 体系结构中的六个主要概念：
 
   
 
-  结构图：
-
-![9d2ba6f4fab343c9b00725b5cabf2096](C:\Users\Bc\Desktop\9d2ba6f4fab343c9b00725b5cabf2096.jpeg)
-
-![e1e1765392e3409da6747f69e9373899](C:\Users\Bc\Desktop\e1e1765392e3409da6747f69e9373899.jpeg)
+  
