@@ -1,5 +1,0 @@
-http://localhost:8080/demo1/Demo1Servlet
-
-http://localhost:8080/demo2/Demo2Servlet
-
-appBase = "E:/project/Minicat/webapps"
