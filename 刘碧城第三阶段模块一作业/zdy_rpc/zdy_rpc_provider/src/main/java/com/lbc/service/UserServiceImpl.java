@@ -37,10 +37,10 @@ public class UserServiceImpl implements UserService {
 
                     protected void initChannel(SocketChannel socketChannel) throws Exception {
                         ChannelPipeline pipeline = socketChannel.pipeline();
-                        pipeline.addLast("encoder", new ObjectEncoder());
-                        pipeline.addLast("decoder", new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.cacheDisabled(null)));
-                        // pipeline.addLast(new RpcEncoder(RpcRequest.class,new JSONSerializer()));
-                        // pipeline.addLast(new RpcDecoder(RpcRequest.class,new JSONSerializer()));
+                        // pipeline.addLast("encoder", new ObjectEncoder());
+                        // pipeline.addLast("decoder", new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.cacheDisabled(null)));
+                        pipeline.addLast(new RpcEncoder(RpcRequest.class,new JSONSerializer()));
+                        pipeline.addLast(new RpcDecoder(RpcRequest.class,new JSONSerializer()));
                         pipeline.addLast(new InvokerHandler());
                     }
                 });

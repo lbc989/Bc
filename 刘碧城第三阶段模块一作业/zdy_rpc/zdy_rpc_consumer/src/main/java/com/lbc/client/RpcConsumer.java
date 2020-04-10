@@ -48,7 +48,7 @@ public class RpcConsumer {
                 rpcRequest.setObjects(args);
                 rpcRequest.setTypes(method.getParameterTypes());
                 // System.out.println(JSONObject.toJSONString(rpcRequest));
-                ResultHandler resultHandler = new ResultHandler();
+                // ResultHandler resultHandler = new ResultHandler("");
                 EventLoopGroup group = new NioEventLoopGroup();
                 try {
                     Bootstrap b = new Bootstrap();
@@ -59,11 +59,11 @@ public class RpcConsumer {
                                 @Override
                                 public void initChannel(SocketChannel ch) throws Exception {
                                     ChannelPipeline pipeline = ch.pipeline();
-                                    // pipeline.addLast(new RpcEncoder(RpcRequest.class,new JSONSerializer()));
-                                    // pipeline.addLast(new RpcDecoder(RpcRequest.class,new JSONSerializer()));
-                                    pipeline.addLast("encoder", new ObjectEncoder());
-                                    pipeline.addLast("decoder", new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.cacheDisabled(null)));
-                                    pipeline.addLast("handler",resultHandler);
+                                    pipeline.addLast(new RpcEncoder(RpcRequest.class,new JSONSerializer()));
+                                    pipeline.addLast(new RpcDecoder(RpcRequest.class,new JSONSerializer()));
+                                    // pipeline.addLast("encoder", new ObjectEncoder());
+                                    // pipeline.addLast("decoder", new ObjectDecoder(Integer.MAX_VALUE, ClassResolvers.cacheDisabled(null)));
+                                    // pipeline.addLast("handler",resultHandler);
                                 }
                             });
 
@@ -73,7 +73,7 @@ public class RpcConsumer {
                 } finally {
                     group.shutdownGracefully();
                 }
-                return resultHandler.getResponse();
+                return "success ";
                 // return target.toString();
             }
         });
